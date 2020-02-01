@@ -1,5 +1,12 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Cinzel+Decorative:900&display=swap');
+
 .App {
     text-align: center;
+
+    .ant-layout-header {
+        padding: 0px;
+    }
 }
 
 .App-logo {

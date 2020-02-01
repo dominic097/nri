@@ -1,20 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Layout } from 'antd';
+import { Layout } from "antd";
+import React from "react";
+import "./App.scss";
+import { AppHeader } from "./component";
 
-import './App.scss';
-
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
     <div className="App">
-        <Layout>
-      <Header>Header</Header>
-      <Content>Content</Content>
-      <Footer>Footer</Footer>
-    </Layout>
-     
+      <Layout>
+        <Header>
+          <AppHeader></AppHeader>
+        </Header>
+        <Content>Content</Content>
+        <Footer>Footer</Footer>
+      </Layout>
     </div>
   );
 }
