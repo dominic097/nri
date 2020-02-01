@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Header>
+        <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
           <AppHeader></AppHeader>
         </Header>
-        <Content style={{ marginTop: 64 }}>{AppRoutes}</Content>
+        <Content>{AppRoutes}</Content>
         <Footer>Footer</Footer>
       </Layout>
     </div>
